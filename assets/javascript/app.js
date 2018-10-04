@@ -49,7 +49,7 @@ function startTimer() {
 }
 
 function setQuestion() {
-  if (questionIndex < 2) {
+  if (questionIndex < questions.length) {
     $(".question-answer").show();
     $("#question").text(questions[questionIndex].question);
     $("#answer1").text(questions[questionIndex].answers[0]);
