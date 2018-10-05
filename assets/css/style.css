@@ -1,0 +1,46 @@
+body { 
+  background: url("../images/The_Office_Background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title-img{
+  height: 150px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+#start-button{
+  margin-top: 10px;
+}
+
+#right-wrong-image {
+  height: 280px;
+  width: 498px;
+}
+
+#question {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+#right-wrong-message {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.question-answer{
+  margin-top: 10px;
+}
+
+#timer-holder{
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+
+

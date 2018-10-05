@@ -16,38 +16,50 @@
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10 text-center">
-        <h1>The Office Trivia!</h1>
+        <img class="rounded" id="title-img" src="assets/images/The_Office_US_title.jpg" alt="The Office Trivia Title Card" />
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8" id="start-button">
-            <button type="button" class="btn btn-secondary">Start Game!</button>
+            <button type="button" class="btn btn-dark">START GAME!</button>
           </div>
           <div class="col-md-2"></div>
         </div>
         <div class="row">
-          <div class="col-md-12" id="timer-holder">
-            <h5>Time Remaining: <span id="timer"> Seconds</span></h5>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <h5 class="rounded" id="timer-holder">Time Remaining: <span id="timer"> Seconds</span></h5>
           </div>
+          <div class="col-md-4"></div>
         </div>
         <div class="row question-answer">
-          <div class="col-md-12" id="question"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <p class="rounded" id="question"></p>
+          </div>
+          <div class="col-md-4"></div>
         </div>
         <div class="row question-answer">
-          <div class="col-md-12"><button class="answer-button" id="answer1"></button></div>
+          <div class="col-md-12"><button class="answer-button rounded" id="answer1"></button></div>
         </div>
         <div class="row question-answer">
-          <div class="col-md-12"><button class="answer-button" id="answer2"></button></div>
+          <div class="col-md-12"><button class="answer-button rounded" id="answer2"></button></div>
         </div>
         <div class="row question-answer">
-          <div class="col-md-12"><button class="answer-button" id="answer3"></button></div>
+          <div class="col-md-12"><button class="answer-button rounded" id="answer3"></button></div>
         </div>
         <div class="row question-answer">
-          <div class="col-md-12"><button class="answer-button" id="answer4"></button></div>
+          <div class="col-md-12"><button class="answer-button rounded" id="answer4"></button></div>
         </div>
-        <div class="row" id="right-wrong">
+        <div class="row right-wrong">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h4 class="rounded" id="right-wrong-message"></h4>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row right-wrong">
           <div class="col-md-12">
-            <h4 id="right-wrong-message"></h4>
-            <img src="" id="right-wrong-image" />
+            <img class="rounded" id="right-wrong-image" src="" />
           </div>
         </div>
       </div>
