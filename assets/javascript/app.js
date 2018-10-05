@@ -7,6 +7,7 @@ $(document).ready(function () {
   var questionIndex;
   var userGuess;
   var answersRight;
+  // an array of objects that hold all of the questions and answers
   var questions = [{
     question: "Who is the regional manager of the Dunder Mifflin Scranton branch?",
     answers: ["Dwight Schrute", "Michael Scott", "Pam Beesly", "Meredith Palmer",],
@@ -66,7 +67,7 @@ $(document).ready(function () {
     correctAnswer: "A 16-acre beet farm with farmhouse",
   }
   ];
-
+  // function that starts the game and hides/shows appropriate elements and sets the question
   function startGame() {
     questionIndex = 0;
     answersRight = 0;
@@ -76,7 +77,7 @@ $(document).ready(function () {
     $("#start-button").hide();
     setQuestion();
   };
-
+  // function that starts the timer and activates the time-out lose gif
   function startTimer() {
     $("#timer-holder").show();
     var timer = 15;
@@ -88,14 +89,14 @@ $(document).ready(function () {
         clearInterval(timerID);
         $(".question-answer").hide();
         $("#right-wrong-image").attr("src", "assets/images/Time_Out_Gif.gif");
-        $("#right-wrong-message").html("TIME'S UP!<br>The Correct Answer is: " + questions[questionIndex].correctAnswer);
+        $("#right-wrong-message").html("TIME'S UP!<br>The Correct Answer is:<br>" + questions[questionIndex].correctAnswer);
         $(".right-wrong").show();
         questionIndex++;
         setTimeout(setQuestion, 7000);
       };
     }, 1000);
   }
-
+  // function that sets up the next question.  Shows/hides appropriate elements.  If last question has been answered, it triggers the results screen and posts a specific gif based on how well the user did.
   function setQuestion() {
     if (questionIndex < questions.length) {
       $(".question-answer").show();
@@ -131,7 +132,7 @@ $(document).ready(function () {
       $("#timer-holder").hide();
     }
   };
-
+  // function that checks if user guess matches the correct answer of the question. Displays either a right answer gif or a wrong answer gif.
   function checkAnswer() {
     if (userGuess === questions[questionIndex].correctAnswer) {
       $("#right-wrong-image").attr("src", "assets/images/Win_Gif.gif");
@@ -150,14 +151,14 @@ $(document).ready(function () {
       $("#timer-holder").hide();
       $(".right-wrong").show();
       questionIndex++;
-      setTimeout(setQuestion, 5000);
+      setTimeout(setQuestion, 6500);
     }
   }
-
+  // function that starts game upon clicking start game button
   $("#start-button").on("click", function () {
     startGame();
   });
-
+  // function that logs user guess upon clicking an answer button.  Runs check answer function.
   $(".answer-button").on("click", function () {
     clearInterval(timerID);
     userGuess = $(this).text();
