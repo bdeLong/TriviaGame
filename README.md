@@ -21,4 +21,4 @@ Once all questions are answered, the final screen shows the number of correct an
 
 ![The Office Trivia! Questions](assets/images/results-screenshot.png)
 
-Play the game ![here](https://bdelong.github.io/TriviaGame/)
+Play the game [here](https://bdelong.github.io/TriviaGame/)
