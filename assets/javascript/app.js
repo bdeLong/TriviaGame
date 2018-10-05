@@ -151,7 +151,7 @@ $(document).ready(function () {
       $("#timer-holder").hide();
       $(".right-wrong").show();
       questionIndex++;
-      setTimeout(setQuestion, 6500);
+      setTimeout(setQuestion, 5000);
     }
   }
   // function that starts game upon clicking start game button

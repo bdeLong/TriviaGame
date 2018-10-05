@@ -23,13 +23,15 @@ body {
 
 #question {
   margin-top: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   font-weight: 600;
+  padding: 10px;
 }
 
 #right-wrong-message {
   margin-top: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
 }
 
 .question-answer{
@@ -38,8 +40,14 @@ body {
 
 #timer-holder{
   margin-top: 10px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
+}
+
+.answer-button{
+  padding: 5px;
+  width: 300px;
+  font-weight: 600;
 }
 
 
